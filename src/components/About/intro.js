@@ -1,11 +1,12 @@
 import React from 'react'
 import './intro.css'
-import bg from '../../assets/code.gif'
-import contact from '../../assets/contact.png'
+import bg from '../../assets/coding.webm'
+import contact from '../../assets/resume.png'
 import {Link} from 'react-scroll';
 
 const Intro = () => {
     return (
+        
         <section id="intro">
             <div className="introContent">
                 <span className="hello">Hello,</span>
@@ -21,12 +22,17 @@ const Intro = () => {
                     <Link>
                         <button className="btn">
                             <img src={contact} alt="Contact Me" className='btnImg'/>
-                            Contact Me
+                            <p className="btnText">
+                            Resume
+                            </p>
+                            
                         </button>
                     </Link>
                 
             </div>
-            <img src={bg} alt="" className="bg" />
+            <video className="bg" muted autoPlay loop>
+                <source src={bg} type="video/webm"/>
+            </video>
         </section>
     )
 }

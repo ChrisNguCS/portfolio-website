@@ -22,7 +22,7 @@
     font-weight: 300;
     font-size: 1rem;
     max-width: 51rem;
-    padding: 0 2rem;
+    padding: 0 rem;
 }
 
 .skillBars {
@@ -51,4 +51,9 @@
     font-size: 0.9rem;
     font-weight: 200;
 
+}
+
+.skillText>h2 {
+    padding-bottom: 0.5rem;
+    margin-top: -.5rem;
 }
