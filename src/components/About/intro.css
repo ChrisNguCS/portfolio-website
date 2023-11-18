@@ -51,22 +51,26 @@
 }
 
 .btn {
-    background: white;
-    margin: 1rem 0;
+    background: rgb(50, 50, 50);
+    margin: 2rem 0;
     padding: 0rem 1.5rem;
     border: none;
     border-radius: 2rem;
     display: flex;
     padding: 1 2rem;
+    
 }
 
 .btnImg{
-    object-fit: cover;
+    padding: 0.5rem;
     height: 3rem;
 }
 
 .btnText{
-    padding-top: 1rem;
+    padding: 0.6rem 0.2rem;
+    font-size: 1rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
 @media screen and (max-width: 840px) {

@@ -1,8 +1,8 @@
 import React from 'react'
 import './skills.css';
 import Language from '../../assets/language.svg'
-import Framework from '../../assets/framework.png'
-import AppDesign from '../../assets/app-design.png'
+import Framework from '../../assets/framework.svg'
+import libraries from '../../assets/libraries.svg'
 
 
 const Skills = () => {
@@ -19,21 +19,21 @@ const Skills = () => {
             <img src={Language} alt="" className="skillBarImg" />
             <div className="skillText">
               <h2>Programming Languages</h2>
-              <p>Python, Java, C/C++, SQL (SQLite), JavaScript, TypeScript, HTML/CSS</p>
+              <p>Python | Java | C/C++ | SQL (SQLite) | JavaScript | TypeScript | HTML/CSS</p>
             </div>
           </div>
           <div className="skillBar">
             <img src={Framework} alt="" className="skillBarImg" />
             <div className="skillText">
               <h2>Frameworks</h2>
-              <p></p>
+              <p>React Native | Expo | Django</p>
             </div>
           </div>
           <div className="skillBar">
-            <img src={AppDesign} alt="" className="skillBarImg" />
+            <img src={libraries} alt="" className="skillBarImg" />
             <div className="skillText">
-              <h2></h2>
-              <p></p>
+              <h2>Libraries</h2>
+              <p>React | Requests | OS | NumPy | BS4 | Discord.py | Selenium</p>
             </div>
           </div>
         </div>

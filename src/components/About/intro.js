@@ -1,10 +1,15 @@
 import React from 'react'
 import './intro.css'
 import bg from '../../assets/coding.webm'
-import contact from '../../assets/resume.png'
+import resumeImg from '../../assets/resume.svg'
 import {Link} from 'react-scroll';
 
 const Intro = () => {
+
+    const openInNewTab = (url) => {
+        window.open(url, "_blank", "noreferrer");
+    };
+
     return (
         
         <section id="intro">
@@ -17,16 +22,15 @@ const Intro = () => {
                         Software Developer
                     </span>
                     <p className="introDescription">
-                        I'm a software developer and student at Kennesaw State University
+                        Currently a last year student at Kennesaw State University
                     </p>
                     <Link>
-                        <button className="btn">
-                            <img src={contact} alt="Contact Me" className='btnImg'/>
-                            <p className="btnText">
+                    <button className="btn" onClick={() => openInNewTab(process.env.PUBLIC_URL + '/Christopher Nguyen Resume.pdf')}>
+                        <img src={resumeImg} alt="Resume" className='btnImg'/>
+                        <p className='btnText'>
                             Resume
-                            </p>
-                            
-                        </button>
+                        </p>
+                    </button>
                     </Link>
                 
             </div>

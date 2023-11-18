@@ -1,13 +1,16 @@
 import Navbar from "./components/navbar/navbar";
 import Intro from "./components/About/intro"
-import Skils from "./components/skills/skills"
+import Skills from "./components/skills/skills"
+import Projects from "./components/portfolio/portfolio"
 
 function App() {
+  
   return (
     <div className="App">
       <Navbar/>
       <Intro/>
-      <Skils/>
+      <Skills/>
+      <Projects/>
     </div>
   );
 }
