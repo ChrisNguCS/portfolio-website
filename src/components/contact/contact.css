@@ -1,0 +1,77 @@
+#contact {
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.contactTitle{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.contactDesc {
+    padding: 1rem;
+    font-size: medium;
+    font-weight: 300;
+}
+
+.contactForm {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 60rem;
+    
+}
+
+.name, .email, .msg {
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    width: 100%;
+    max-width: 80%;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    background: rgb(50, 50, 50);
+
+}
+
+.submitBtn{
+    background: rgb(50, 50, 50);
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    margin: 2rem;
+    padding: 0.75rem 3.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link{
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin: 0 1rem;
+}
+
+.textArea{
+    font-family: 'Poppins', sans-serif;
+}

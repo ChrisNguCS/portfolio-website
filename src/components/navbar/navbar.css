@@ -3,7 +3,7 @@
     height: 5rem;
     width: 100vw;
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,7 +30,7 @@
 .desktopMenuListItem:hover {
     color: #ec751a;
     padding-bottom: 0.5rem;
-    border-bottom: 8px solid;
+    border-bottom: 4px solid;
 }
 
 .desktopMenuListItem::after{
@@ -62,4 +62,17 @@
     padding: 0 1rem;
     border-radius: 3rem;
     font-family: 'Poppins', sans-serif;
+}
+
+.desktopMenuBtn:hover{
+    color: #ec751a;
+    transition-duration: 3ms;
+
+}
+
+
+.active{
+    color:#ec751a;
+    padding-bottom: 0.5rem;
+    border-bottom: 4px solid;
 }
