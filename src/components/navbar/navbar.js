@@ -7,12 +7,23 @@ import menu from '../../assets/menu.png';
 
 
 const Navbar = () => {
-    const [showMenu, setShowMenu] = useState(false);
-    const menu_btn = document.querySelector('.hamburger');
 
-    menu_btn.addEventListener('click', function (){
-        menu_btn.classList.toggle('is-active');
-    });
+    
+    window.onload = function () {
+        const menu_btn = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.navMenu')
+        const listItem = document.querySelector('.listItem')
+        menu_btn.addEventListener('click', function (){
+            menu_btn.classList.toggle('is-active');
+            navMenu.classList.toggle('is-active');
+        });
+
+        listItem.addEventListener('click', function (){
+            menu_btn.classList.toggle('is-active');
+            navMenu.classList.toggle('is-active');
+        });
+    
+    }
 
     return (
         <nav className='navbar'>
@@ -33,13 +44,12 @@ const Navbar = () => {
             <button className="hamburger">
                 <div className="bar"></div>
             </button>
-            {/* <img src={menu} alt="Menu" className="mobileMenu" onClick={()=>setShowMenu(!showMenu)}/>
-            <div className='navMenu' style={{display: showMenu? 'flex':'none', }}>
-            <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={()=>setShowMenu(false)}>Home</Link>
-            <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={()=>setShowMenu(false)}>About</Link>
-            <Link activeClass='active' to='projects' spy={true} smooth={true} offset={50} duration={500} className="listItem" onClick={()=>setShowMenu(false)}>Portfolio</Link>
-            <Link activeClass='active' to='contact' spy={true} smooth={true} offset={50} duration={500} className="listItem" onClick={()=>setShowMenu(false)}>Contact</Link>
-            </div> */}
+            <div className='navMenu'>
+            <Link to='intro' spy={true} smooth={true} offset={-100} duration={500} className="listItem">Home</Link>
+            <Link to='skills' spy={true} smooth={true} offset={-100} duration={500} className="listItem">About</Link>
+            <Link to='projects' spy={true} smooth={true} offset={50} duration={500} className="listItem">Portfolio</Link>
+            <Link to='contact' spy={true} smooth={true} offset={50} duration={500} className="listItem">Contact</Link>
+            </div>
         </nav>
     )
 }
