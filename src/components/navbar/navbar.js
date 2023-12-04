@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './navbar.css';
 import logo from '../../assets/ologo.png';
 import contactImg from '../../assets/email.svg';
 import {Link} from 'react-scroll';
-import menu from '../../assets/menu.png';
+
 
 
 const Navbar = () => {
