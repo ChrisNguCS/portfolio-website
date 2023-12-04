@@ -37,13 +37,13 @@ const Portfolio = () => {
       direction='row' 
       justifyContent='center' 
       alignItems="center"
-      spacing={0}
+      spacing={4}
       display='flex'
       minHeight='100vh'
       sx={{
         width: '100%',
         maxWidth: '60%',
-
+        ml: '23vw'
       }}>
       {/* Project 1 */}
         <Grid item xs = {6} >
@@ -205,7 +205,7 @@ const Portfolio = () => {
               <Chip label='HTML' variant='outlined' color='primary' sx={{m:1}}/>
               <Chip label='CSS' variant='outlined' color='primary' sx={{m:1}}/>
               <br/>
-              <IconButton aria-label='github' size='large' color='primary'>
+              <IconButton aria-label='github' size='large' color='primary' href='https://github.com/ChrisNguCS/portfolio-website'>
                 <GitHubIcon fontSize='12px'/>
               </IconButton>
             </CardContent>
@@ -216,7 +216,8 @@ const Portfolio = () => {
             maxWidth: '400px',
             borderRadius: '12px',
             height: '700px',
-            bgcolor: 'background.lightgray'
+            bgcolor: 'background.lightgray',
+            display: 'none'
             }}>
             {/* Card Image */}
             <CardMedia

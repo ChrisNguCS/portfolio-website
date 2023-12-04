@@ -19,9 +19,15 @@ const Contact = () => {
             <textarea name="message" className='msg' rows="5" placeholder='Your Message'></textarea>
             <button type='submit' value='Send' className="submitBtn">Submit</button>
             <div className="links">
-                <img src={LinkedinIcon} alt="LinkedIn" className="link" />
-                <img src={GithubIcon} alt="GitHub" className="link" />
-                <img src={GmailIcon} alt="Gmail" className="link" />
+                <a href="https://www.linkedin.com/in/chrisngu/">
+                    <img src={LinkedinIcon} alt="LinkedIn" className="link"/>
+                </a>
+                <a href="https://github.com/ChrisNguCS">
+                    <img src={GithubIcon} alt="GitHub" className="link" />
+                </a>
+                <a href="mailto:chrisngucs@gmail.com">
+                    <img src={GmailIcon} alt="Gmail" className="link" />
+                </a>
             </div>
         </form>
     </section>
