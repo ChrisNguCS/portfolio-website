@@ -19,7 +19,9 @@ const Portfolio = () => {
     
     <ThemeProvider theme={theme}>
     <section id='portfolio'>
-      <h2>Portfolio</h2>
+      <Typography variant='h3' sx={{justifyContent:'center', alignItems:'center',justifySelf:'center',alignItems:'center'}}>
+        Portfolio
+      </Typography>
       <Grid container spacing = {0} alignItems='center' justifyContent='center' display='flex' columns={5}>
         <Grid item xs = {2}>
           <Card sx={{
@@ -47,11 +49,23 @@ const Portfolio = () => {
                 fontWeight: '200',
                 fontSize: '14px'
               }}>
-                Lizards are a widespread group of squamate reptiles, with over 6,000
-                species, ranging across all continents except Antarctica
+                • Created a cross platform mobile application to create collaborative grocery lists on iOS and Android<br/>
+                • Leveraged React Native framework to use native components for iOS and Android with one codebase<br/>
+                • Incorporated Firebase with FireAuth for authentication and Firestore as a NoSQL database<br/>
+
               </Typography>
-              
-              <Chip label='test' variant='outlined' color='primary'/>
+              <Typography gutterBottom variant='subtitle1' component='div' color={'white'} 
+              sx={{
+                my: 1,
+                justifySelf: 'center'
+              }}>
+                Stack:
+              </Typography>
+              <Chip label='React Native' variant='outlined' color='primary' sx={{m:1}}/>
+              <Chip label='Firebase' variant='outlined' color='primary' sx={{m:1}}/>
+              <Chip label='Expo' variant='outlined' color='primary' sx={{m:1}}/>
+              <Chip label='Javascript' variant='outlined' color='primary' sx={{m:1}}/>
+              <Chip label='Typescript' variant='outlined' color='primary' sx={{m:1}}/>
             </CardContent>
           </Card>
         </Grid>

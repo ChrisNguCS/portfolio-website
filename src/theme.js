@@ -14,6 +14,15 @@ const theme = createTheme({
             'Poppins',
             'sans-serif',
         ].join(',')
+    },
+    components: {
+        MuiChip:{
+            props: { variant: 'stack' },
+            style: {
+                color: '#ffffff',
+                border: '2px solid'
+            }
+        }
     }
   });
 
