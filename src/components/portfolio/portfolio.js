@@ -23,7 +23,7 @@ const Portfolio = () => {
         textAlign: 'center', 
         display:'flex', 
         fontSize:'3rem', 
-        my: 5,
+        my: 6,
         fontWeight:'900',
       }}>
         Portfolio
@@ -31,6 +31,7 @@ const Portfolio = () => {
       {/* Grid container */}
       <Grid columns={{ xs: 4, sm: 8, md: 12 }}
       container 
+      rowSpacing={10}
       justifyContent='center' 
       alignItems="center"
       spacing={0}
@@ -40,7 +41,7 @@ const Portfolio = () => {
       sx={{
         width: '100%',
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fill, minmax(690px, 1fr))'
+        gridTemplateColumns: 'repeat(auto-fill, minmax(600px, 1fr))'
       }}>
       
       {/* Project 1 */}

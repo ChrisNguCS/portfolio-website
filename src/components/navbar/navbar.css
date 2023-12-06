@@ -10,8 +10,15 @@
     position: sticky;
     top: 0;
     z-index: 3;
-    max-width: 75rem;
+
     font-family: 'Poppins', sans-serif;
+}
+
+.bar{
+    height: 5rem;
+    width: 100%;
+    max-width: 10rem;
+    position: absolute;
 }
 
 .logo {

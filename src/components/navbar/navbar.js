@@ -26,7 +26,9 @@ const Navbar = () => {
     }
 
     return (
+
         <nav className='navbar'>
+            
             <img src={logo} alt='Logo' className='logo'/>
             <div className="desktopMenu">
                 <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Home</Link>
@@ -51,6 +53,7 @@ const Navbar = () => {
             <Link to='contact' spy={true} smooth={true} offset={50} duration={500} className="listItem">Contact</Link>
             </div>
         </nav>
+
     )
 }
 
