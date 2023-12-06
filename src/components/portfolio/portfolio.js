@@ -2,17 +2,14 @@ import React from 'react'
 import './portfolio.css'
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Project1 from '../../assets/Cover.png'
 import Project2 from '../../assets/readyup.png'
 import Project3 from '../../assets/website.png'
-import Project4 from '../../assets/portfolio-1.png'
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { Chip, colors, createTheme, IconButton, ThemeProvider, useTheme} from '@mui/material';
+import { Chip, IconButton, ThemeProvider } from '@mui/material';
 import theme from '../../theme.js'
 
 const Portfolio = () => {
@@ -26,35 +23,38 @@ const Portfolio = () => {
         textAlign: 'center', 
         display:'flex', 
         fontSize:'3rem', 
-        m:5,
+        my: 5,
         fontWeight:'900',
       }}>
         Portfolio
       </Typography>
       {/* Grid container */}
-      <Grid 
+      <Grid columns={{ xs: 4, sm: 8, md: 12 }}
       container 
-      direction='row' 
       justifyContent='center' 
       alignItems="center"
-      spacing={4}
+      spacing={0}
       display='flex'
       minHeight='100vh'
+      
       sx={{
         width: '100%',
-        maxWidth: '60%',
-        ml: '23vw'
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fill, minmax(690px, 1fr))'
       }}>
+      
       {/* Project 1 */}
-        <Grid item xs = {6} >
+      <Grid item sm={12}
+          display='flex'
+          justifyContent='center' 
+          alignItems="center">
+          <div className='flex'>
           <Card sx={{
-
-            width: '400px',
+            maxWidth: '400px',
             borderRadius: '12px',
             height: '700px',
             bgcolor: 'background.lightgray',
             alignSelf: 'center',
-
             }}>
             {/* Card image */}
             <CardMedia
@@ -104,14 +104,19 @@ const Portfolio = () => {
               </IconButton>
             </CardContent>
           </Card>
+          </div>
         </Grid>
-        <Grid item sm={6}>
+        {/* Project 2 */}
+        <Grid item sm={12} 
+          display='flex'
+          justifyContent='center' 
+          alignItems="center"
+          >
         <Card sx={{
             maxWidth: '400px',
             borderRadius: '12px',
             height: '700px',
             bgcolor: 'background.lightgray'
-
             }}>
             {/* Card Image */}
             <CardMedia
@@ -159,7 +164,11 @@ const Portfolio = () => {
             </CardContent>
           </Card>        
           </Grid>
-        <Grid item sm={6}>
+          {/* Project 3 */}
+          <Grid item sm={12} 
+          display='flex'
+          justifyContent='center' 
+          alignItems="center">
         <Card sx={{
             maxWidth: '400px',
             borderRadius: '12px',
@@ -187,10 +196,10 @@ const Portfolio = () => {
                 fontWeight: '200',
                 fontSize: '14px',
               }}>
-                • Created a cross platform mobile application to create collaborative grocery lists on iOS and Android<br/>
-                • Leveraged React Native framework to use native components for iOS and Android with one codebase<br/>
-                • Incorporated Firebase with FireAuth for authentication and Firestore as a NoSQL database<br/>
-
+                  • Developed a professional portfolio website showcasing skills and projects using React.js<br/>
+                  • Utilized Material-UI components to create modern and responsive project cards<br/>
+                  • Used responsive web design principles, ensuring a seamless user experience across various devices and
+                  screen size<br/>
               </Typography>
               <Typography gutterBottom variant='subtitle1' component='div' color={'white'} 
               sx={{
