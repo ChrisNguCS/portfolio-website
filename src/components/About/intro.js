@@ -25,7 +25,7 @@ const Intro = () => {
                         Bachelor of Computer Science graduate from Kennesaw State University
                     </p>
                     <Link>
-                    <button className="btn" onClick={() => openInNewTab(process.env.PUBLIC_URL + '/Christopher_Nguyen_Resume.pdf')}>
+                    <button className="btn" onClick={() => openInNewTab(process.env.PUBLIC_URL + '/Christopher_D_Nguyen_Resume.pdf')}>
                         <img src={resumeImg} alt="Resume" className='btnImg'/>
                         <p className='btnText'>
                             Resume
