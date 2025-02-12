@@ -15,10 +15,11 @@
 }
 
 .bar{
-    height: 5rem;
+    height: 4rem;
     width: 100%;
     max-width: 10rem;
     position: absolute;
+    margin-top: 10px;
 }
 
 .logo {
@@ -161,12 +162,13 @@
 }
 
 .hamburger.is-active:before {
-    transform: rotate(-45deg) translate(-8px, 6px);
+    transform: rotate(-45deg) translate(-2px, 6px);
+    
 
 }
 
 .hamburger.is-active:after {
-    transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-3px, -6px);
 
 }
 

@@ -20,7 +20,7 @@ const Portfolio = () => {
     {/* Section title */}
       <Typography variant='h1' justifyContent='center' 
       sx={{
-        textAlign: 'center', 
+        textAlign:'center', 
         display:'flex', 
         fontSize:'3rem', 
         my: 6,
@@ -50,61 +50,61 @@ const Portfolio = () => {
           justifyContent='center' 
           alignItems="center">
           <div className='flex'>
-          <Card sx={{
-            maxWidth: '400px',
-            borderRadius: '12px',
-            height: '700px',
-            bgcolor: 'background.lightgray',
-            alignSelf: 'center',
-            }}>
-            {/* Card image */}
-            <CardMedia
-              component='img'
-              alt='project image'
-              height={300}
-              image={Project1}
-              sx={{borderRadius: '12px',
-              borderBottomLeftRadius: '0px',
-              borderBottomRightRadius: '0px',
-              }}
-            />
-            {/* Card description */}
-            <CardContent 
-            sx={{
+            <Card sx={{
+              maxWidth: '400px',
+              borderRadius: '12px',
+              height: '700px',
               bgcolor: 'background.lightgray',
-            }}>
-              {/* Title */}
-              <Typography gutterBottom variant='h5' component='div' color={'white'}>
-                Dynamic Grocery List
-              </Typography>
-              {/* Descripton */}
-              <Typography color="white"
-              sx={{
-                fontWeight: '200',
-                fontSize: '14px'
+              alignSelf: 'center',
               }}>
-                • Created a cross platform mobile application to create collaborative grocery lists on iOS and Android<br/>
-                • Leveraged React Native framework to use native components for iOS and Android with one codebase<br/>
-                • Incorporated Firebase with FireAuth for authentication and Firestore as a NoSQL database<br/>
-              </Typography>
-              <Typography gutterBottom variant='subtitle1' component='div' color={'white'} 
+              {/* Card image */}
+              <CardMedia
+                component='img'
+                alt='project image'
+                height={300}
+                image={Project1}
+                sx={{borderRadius: '12px',
+                borderBottomLeftRadius: '0px',
+                borderBottomRightRadius: '0px',
+                }}
+              />
+              {/* Card description */}
+              <CardContent 
               sx={{
-                my: 1,
-                justifySelf: 'center'
+                bgcolor: 'background.lightgray',
               }}>
-                Stack:
-              </Typography>
-              <Chip label='React Native' variant='outlined' color='primary' sx={{m:1}}/>
-              <Chip label='Firebase' variant='outlined' color='primary' sx={{m:1}}/>
-              <Chip label='Expo' variant='outlined' color='primary' sx={{m:1}}/>
-              <Chip label='Javascript' variant='outlined' color='primary' sx={{m:1}}/>
-              <Chip label='Typescript' variant='outlined' color='primary' sx={{m:1}}/><br/>
-              <IconButton aria-label='github' size='large' color='primary' textAlign='center' justifyContent='center' href='https://github.com/ChrisNguCS/portfolio'>
-              
-              <GitHubIcon fontSize='12px'/>
-              </IconButton>
-            </CardContent>
-          </Card>
+                {/* Title */}
+                <Typography gutterBottom variant='h5' component='div' color={'white'}>
+                  Dynamic Grocery List
+                </Typography>
+                {/* Descripton */}
+                <Typography color="white"
+                sx={{
+                  fontWeight: '200',
+                  fontSize: '14px'
+                }}>
+                  • Created a cross platform mobile application to create collaborative grocery lists on iOS and Android<br/>
+                  • Leveraged React Native framework to use native components for iOS and Android with one codebase<br/>
+                  • Incorporated Firebase with FireAuth for authentication and Firestore as a NoSQL database<br/>
+                </Typography>
+                <Typography gutterBottom variant='subtitle1' component='div' color={'white'} 
+                sx={{
+                  my: 1,
+                  justifySelf: 'center'
+                }}>
+                  Stack:
+                </Typography>
+                <Chip label='React Native' variant='outlined' color='primary' sx={{m:1}}/>
+                <Chip label='Firebase' variant='outlined' color='primary' sx={{m:1}}/>
+                <Chip label='Expo' variant='outlined' color='primary' sx={{m:1}}/>
+                <Chip label='Javascript' variant='outlined' color='primary' sx={{m:1}}/>
+                <Chip label='Typescript' variant='outlined' color='primary' sx={{m:1}}/><br/>
+                <IconButton aria-label='github' size='large' color='primary' textAlign='center' justifyContent='center' href='https://github.com/ChrisNguCS/portfolio'>
+                
+                <GitHubIcon fontSize='12px'/>
+                </IconButton>
+              </CardContent>
+            </Card>
           </div>
         </Grid>
         {/* Project 2 */}
@@ -144,8 +144,6 @@ const Portfolio = () => {
                 • Integrated with Discord to wait for user commands to start queues and schedule matches<br/>
                 • Multi-threaded tasks to use Schedule library and run bot processes in parallel<br/>
                 • Stored data using SQLite3 to store and edit server specific IDs for multi-server use<br/>
-
-
               </Typography>
               <Typography gutterBottom variant='subtitle1' component='div' color={'white'} 
               sx={{
@@ -159,118 +157,116 @@ const Portfolio = () => {
               <Chip label='OS' variant='outlined' color='primary' sx={{m:1}}/>
               <Chip label='SQLite' variant='outlined' color='primary' sx={{m:1}}/>
               <IconButton aria-label='github' size='large' color='primary' href='https://github.com/ChrisNguCS/Ready-Up-Discord-Bot'>
-              
                 <GitHubIcon fontSize='12px' />
               </IconButton>
             </CardContent>
           </Card>        
           </Grid>
-          {/* Project 3 */}
-          <Grid item sm={12} 
+        {/* Project 3 */}
+        <Grid item sm={12} 
           display='flex'
           justifyContent='center' 
           alignItems="center">
-        <Card sx={{
-            maxWidth: '400px',
-            borderRadius: '12px',
-            height: '700px',
-            bgcolor: 'background.lightgray'
-            }}>
-            {/* Card Image */}
-            <CardMedia
-              component='img'
-              alt='project image'
-              height={300}
-              image={Project3}
-            />
-            <CardContent 
-            sx={{
+          <Card sx={{
+              maxWidth: '400px',
+              borderRadius: '12px',
+              height: '700px',
               bgcolor: 'background.lightgray'
-            }}>
-              {/* Title */}
-              <Typography gutterBottom variant='h5' component='div' color={'white'}>
-                Portfolio Website
-              </Typography>
-              {/* Descripton */}
-              <Typography color="white"
-              sx={{
-                fontWeight: '200',
-                fontSize: '14px',
               }}>
-                  • Developed a professional portfolio website showcasing skills and projects using React.js<br/>
-                  • Utilized Material-UI components to create modern and responsive project cards<br/>
-                  • Used responsive web design principles, ensuring a seamless user experience across various devices and
-                  screen size<br/>
-              </Typography>
-              <Typography gutterBottom variant='subtitle1' component='div' color={'white'} 
+              {/* Card Image */}
+              <CardMedia
+                component='img'
+                alt='project image'
+                height={300}
+                image={Project3}
+              />
+              <CardContent 
               sx={{
-                my: 1,
-                justifySelf: 'center'
+                bgcolor: 'background.lightgray'
               }}>
-                Stack:
-              </Typography>
-              <Chip label='React' variant='outlined' color='primary' sx={{m:1}}/>
-              <Chip label='Material UI' variant='outlined' color='primary' sx={{m:1}}/>
-              <Chip label='Javascript' variant='outlined' color='primary' sx={{m:1}}/>
-              <Chip label='HTML' variant='outlined' color='primary' sx={{m:1}}/>
-              <Chip label='CSS' variant='outlined' color='primary' sx={{m:1}}/>
-              <br/>
-              <IconButton aria-label='github' size='large' color='primary' href='https://github.com/ChrisNguCS/portfolio-website'>
-                <GitHubIcon fontSize='12px'/>
-              </IconButton>
-            </CardContent>
+                {/* Title */}
+                <Typography gutterBottom variant='h5' component='div' color={'white'}>
+                  Portfolio Website
+                </Typography>
+                {/* Descripton */}
+                <Typography color="white"
+                sx={{
+                  fontWeight: '200',
+                  fontSize: '14px',
+                }}>
+                    • Developed a professional portfolio website showcasing skills and projects using React.js<br/>
+                    • Utilized Material-UI components to create modern and responsive project cards<br/>
+                    • Used responsive web design principles, ensuring a seamless user experience across various devices and
+                    screen size<br/>
+                </Typography>
+                <Typography gutterBottom variant='subtitle1' component='div' color={'white'} 
+                sx={{
+                  my: 1,
+                  justifySelf: 'center'
+                }}>
+                  Stack:
+                </Typography>
+                <Chip label='React' variant='outlined' color='primary' sx={{m:1}}/>
+                <Chip label='Material UI' variant='outlined' color='primary' sx={{m:1}}/>
+                <Chip label='Javascript' variant='outlined' color='primary' sx={{m:1}}/>
+                <Chip label='HTML' variant='outlined' color='primary' sx={{m:1}}/>
+                <Chip label='CSS' variant='outlined' color='primary' sx={{m:1}}/>
+                <br/>
+                <IconButton aria-label='github' size='large' color='primary' href='https://github.com/ChrisNguCS/portfolio-website'>
+                  <GitHubIcon fontSize='12px'/>
+                </IconButton>
+              </CardContent>
           </Card>
         </Grid>
         <Grid item sm={6}>
-        <Card sx={{
-            maxWidth: '400px',
-            borderRadius: '12px',
-            height: '700px',
-            bgcolor: 'background.lightgray',
-            display: 'none'
-            }}>
-            {/* Card Image */}
-            <CardMedia
-              component='img'
-              alt='project image'
-              height={300}
-              image={Project1}
-            />
-            <CardContent 
-            sx={{
-              bgcolor: 'background.lightgray'
-            }}>
-              {/* Title */}
-              <Typography gutterBottom variant='h5' component='div' color={'white'}>
-                Dynamic Grocery List
-              </Typography>
-              {/* Descripton */}
-              <Typography color="white"
-              sx={{
-                fontWeight: '200',
-                fontSize: '14px'
+          <Card sx={{
+              maxWidth: '400px',
+              borderRadius: '12px',
+              height: '700px',
+              bgcolor: 'background.lightgray',
+              display: 'none'
               }}>
-                • Created a cross platform mobile application to create collaborative grocery lists on iOS and Android<br/>
-                • Leveraged React Native framework to use native components for iOS and Android with one codebase<br/>
-                • Incorporated Firebase with FireAuth for authentication and Firestore as a NoSQL database<br/>
-
-              </Typography>
-              <Typography gutterBottom variant='subtitle1' component='div' color={'white'} 
+              {/* Card Image */}
+              <CardMedia
+                component='img'
+                alt='project image'
+                height={300}
+                image={Project1}
+              />
+              <CardContent 
               sx={{
-                my: 1,
-                justifySelf: 'center'
+                bgcolor: 'background.lightgray'
               }}>
-                Stack:
-              </Typography>
-              <Chip label='React Native' variant='outlined' color='primary' sx={{m:1}}/>
-              <Chip label='Firebase' variant='outlined' color='primary' sx={{m:1}}/>
-              <Chip label='Expo' variant='outlined' color='primary' sx={{m:1}}/>
-              <Chip label='Javascript' variant='outlined' color='primary' sx={{m:1}}/>
-              <Chip label='Typescript' variant='outlined' color='primary' sx={{m:1}}/>
-              <IconButton aria-label='github' size='large' color='primary'>
-                <GitHubIcon fontSize='12px'/>
-              </IconButton>
-            </CardContent>
+                {/* Title */}
+                <Typography gutterBottom variant='h5' component='div' color={'white'}>
+                  Dynamic Grocery List
+                </Typography>
+                {/* Descripton */}
+                <Typography color="white"
+                sx={{
+                  fontWeight: '200',
+                  fontSize: '14px'
+                }}>
+                  • Created a cross platform mobile application to create collaborative grocery lists on iOS and Android<br/>
+                  • Leveraged React Native framework to use native components for iOS and Android with one codebase<br/>
+                  • Incorporated Firebase with FireAuth for authentication and Firestore as a NoSQL database<br/>
+                </Typography>
+                <Typography gutterBottom variant='subtitle1' component='div' color={'white'} 
+                sx={{
+                  my: 1,
+                  justifySelf: 'center'
+                }}>
+                  Stack:
+                </Typography>
+                <Chip label='React Native' variant='outlined' color='primary' sx={{m:1}}/>
+                <Chip label='Firebase' variant='outlined' color='primary' sx={{m:1}}/>
+                <Chip label='Expo' variant='outlined' color='primary' sx={{m:1}}/>
+                <Chip label='Javascript' variant='outlined' color='primary' sx={{m:1}}/>
+                <Chip label='Typescript' variant='outlined' color='primary' sx={{m:1}}/>
+                <IconButton aria-label='github' size='large' color='primary'>
+                  <GitHubIcon fontSize='12px'/>
+                </IconButton>
+              </CardContent>
           </Card>
         </Grid>
       </Grid>

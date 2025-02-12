@@ -22,7 +22,7 @@ const Intro = () => {
                         Software Developer
                     </span>
                     <p className="introDescription">
-                        Currently a last year student at Kennesaw State University
+                        Bachelor of Computer Science graduate from Kennesaw State University
                     </p>
                     <Link>
                     <button className="btn" onClick={() => openInNewTab(process.env.PUBLIC_URL + '/Christopher_Nguyen_Resume.pdf')}>
