@@ -22,10 +22,10 @@ const Intro = () => {
                         Software Developer
                     </span>
                     <p className="introDescription">
-                        Bachelor of Computer Science graduate from Kennesaw State University
+                        Bachelor of Computer Science from Kennesaw State University
                     </p>
                     <Link>
-                    <button className="btn" onClick={() => openInNewTab(process.env.PUBLIC_URL + '/Christopher_D_Nguyen_Resume.pdf')}>
+                    <button className="btn" onClick={() => openInNewTab(process.env.PUBLIC_URL + '/Christopher_Nguyen_Resume.pdf')}>
                         <img src={resumeImg} alt="Resume" className='btnImg'/>
                         <p className='btnText'>
                             Resume
@@ -34,6 +34,7 @@ const Intro = () => {
                     </Link>
                 
             </div>
+            
             <video className="bg" muted autoPlay loop>
                 <source src={bg} type="video/webm"/>
             </video>

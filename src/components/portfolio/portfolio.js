@@ -11,6 +11,7 @@ import Project3 from '../../assets/website.png'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { Chip, IconButton, ThemeProvider } from '@mui/material';
 import theme from '../../theme.js'
+import Box from '@mui/material/Box';
 
 const Portfolio = () => {
   return (
@@ -29,20 +30,30 @@ const Portfolio = () => {
         Portfolio
       </Typography>
       {/* Grid container */}
-      <Grid columns={{ xs: 4, sm: 8, md: 12 }}
-      container 
-      rowSpacing={10}
-      justifyContent='center' 
-      alignItems="center"
-      spacing={0}
-      display='flex'
-      minHeight='100vh'
-      
-      sx={{
-        width: '100%',
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fill, minmax(600px, 1fr))'
-      }}>
+      <Box
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          width: '100%', // Ensures the Box spans the full width
+          padding: '0 20px', // Optional: Add padding to the sides
+          boxSizing: 'border-box', // Include padding in width calculation
+        }}
+      >
+        <Grid
+          columns={{ xs: 4, sm: 8, md: 12 }}
+          container
+          rowSpacing={10}
+          justifyContent="center"
+          alignItems="center"
+          spacing={0}
+          sx={{
+            width: '100%',
+            maxWidth: '1200px', // Optional: Limit the grid's maximum width
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', // Use auto-fit for better centering
+            gap: '10px', // Add spacing between items
+          }}
+        >
       
       {/* Project 1 */}
       <Grid item sm={12}
@@ -53,7 +64,7 @@ const Portfolio = () => {
             <Card sx={{
               maxWidth: '400px',
               borderRadius: '12px',
-              height: '700px',
+              height: '750px',
               bgcolor: 'background.lightgray',
               alignSelf: 'center',
               }}>
@@ -87,6 +98,7 @@ const Portfolio = () => {
                   • Leveraged React Native framework to use native components for iOS and Android with one codebase<br/>
                   • Incorporated Firebase with FireAuth for authentication and Firestore as a NoSQL database<br/>
                 </Typography>
+                <br/>
                 <Typography gutterBottom variant='subtitle1' component='div' color={'white'} 
                 sx={{
                   my: 1,
@@ -116,7 +128,7 @@ const Portfolio = () => {
         <Card sx={{
             maxWidth: '400px',
             borderRadius: '12px',
-            height: '700px',
+            height: '750px',
             bgcolor: 'background.lightgray'
             }}>
             {/* Card Image */}
@@ -145,6 +157,7 @@ const Portfolio = () => {
                 • Multi-threaded tasks to use Schedule library and run bot processes in parallel<br/>
                 • Stored data using SQLite3 to store and edit server specific IDs for multi-server use<br/>
               </Typography>
+              <br/>
               <Typography gutterBottom variant='subtitle1' component='div' color={'white'} 
               sx={{
                 my: 1,
@@ -157,7 +170,7 @@ const Portfolio = () => {
               <Chip label='OS' variant='outlined' color='primary' sx={{m:1}}/>
               <Chip label='SQLite' variant='outlined' color='primary' sx={{m:1}}/>
               <IconButton aria-label='github' size='large' color='primary' href='https://github.com/ChrisNguCS/Ready-Up-Discord-Bot'>
-                <GitHubIcon fontSize='12px' />
+              <br/><GitHubIcon fontSize='12px' />
               </IconButton>
             </CardContent>
           </Card>        
@@ -170,7 +183,7 @@ const Portfolio = () => {
           <Card sx={{
               maxWidth: '400px',
               borderRadius: '12px',
-              height: '700px',
+              height: '750px',
               bgcolor: 'background.lightgray'
               }}>
               {/* Card Image */}
@@ -199,6 +212,7 @@ const Portfolio = () => {
                     • Used responsive web design principles, ensuring a seamless user experience across various devices and
                     screen size<br/>
                 </Typography>
+                <br/><br/>
                 <Typography gutterBottom variant='subtitle1' component='div' color={'white'} 
                 sx={{
                   my: 1,
@@ -251,6 +265,7 @@ const Portfolio = () => {
                   • Leveraged React Native framework to use native components for iOS and Android with one codebase<br/>
                   • Incorporated Firebase with FireAuth for authentication and Firestore as a NoSQL database<br/>
                 </Typography>
+                
                 <Typography gutterBottom variant='subtitle1' component='div' color={'white'} 
                 sx={{
                   my: 1,
@@ -270,6 +285,7 @@ const Portfolio = () => {
           </Card>
         </Grid>
       </Grid>
+    </Box>
     </section>
     </ThemeProvider>
   )

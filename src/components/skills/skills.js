@@ -19,21 +19,21 @@ const Skills = () => {
             <img src={Language} alt="" className="skillBarImg" />
             <div className="skillText">
               <h2>Programming Languages</h2>
-              <p>Python | Java | C/C++ | SQL (SQLite) | JavaScript | TypeScript | HTML/CSS</p>
+              <p>Python | Java | C/C++ | SQL (SQLite) | JavaScript | TypeScript | HTML/CSS | PHP | SQL</p>
             </div>
           </div>
           <div className="skillBar">
             <img src={Framework} alt="" className="skillBarImg" />
             <div className="skillText">
               <h2>Frameworks</h2>
-              <p>React Native | Expo | Django</p>
+              <p>React | React Native | Express | Django | Spark</p>
             </div>
           </div>
           <div className="skillBar">
             <img src={libraries} alt="" className="skillBarImg" />
             <div className="skillText">
-              <h2>Libraries</h2>
-              <p>React | Requests | OS | NumPy | BS4 | Discord.py | Selenium</p>
+              <h2>Tools</h2>
+              <p>Git | Docker | Expo | NPM | Node.js | MongoDB | MySQL | SQLite</p>
             </div>
           </div>
         </div>
